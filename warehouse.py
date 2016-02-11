@@ -13,11 +13,19 @@ class Customer():
         this.product_num = product_num
         this.items = items
 
+
 class Drone():
     def __init__(self, x, y, payload):
         this.x = x
         this.y = y
-        this.payload = payload
+        this.current_payload = payload
+        this.loaded_items = {}
+        this.available = 0
+
+    def load(items):
+        for item in items:
+            
+
 
 
 def distance((x1, y1), (x2, y2)):
