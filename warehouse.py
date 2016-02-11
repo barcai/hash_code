@@ -28,8 +28,14 @@ class Drone():
         this.loaded_items = {}
         this.available = 0
 
-    def load(items):
+    def load(self, items):
         for item in items:
+            item = str(item)
+            if this.loaded_items.has_key(item):
+                this.loaded_items[item] +=1
+            else:
+                this.loaded_items.update("{}".format(item): 1)
+
 
 
 
@@ -40,8 +46,3 @@ def distance((x1, y1), (x2, y2)):
     euclidean_distance = sqrt(diff_x * diff_x + diff_y * diff_y)
     dis = ceil(euclidean_distance)
     return dis
-
-def get_weight(index):
-
-
-
