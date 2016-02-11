@@ -1,17 +1,24 @@
 from math import sqrt, ceil
 
 class Warehouse():
-    def __init__(x, y, products):
+    def __init__(self, x, y, products):
         this.x = x
         this.y = y
         this.products = products
 
 class Customer():
-    def __init__(x, y, product_num, items):
+    def __init__(self, x, y, product_num, items):
         this.x = x
         this.y = y
         this.product_num = product_num
         this.items = items
+
+class Drone():
+    def __init__(self, x, y, payload):
+        this.x = x
+        this.y = y
+        this.payload = payload
+
 
 def distance((x1, y1), (x2, y2)):
     diff_x = x1 - x2
