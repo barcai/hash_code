@@ -13,6 +13,12 @@ class Customer():
         this.product_num = product_num
         this.items = items
 
+    def get_weight(self, item2weight)
+        sum = 0
+        for item in self.items:
+            sum += item2weight[item]
+        return sum
+
 
 class Drone():
     def __init__(self, x, y, payload):
@@ -24,7 +30,7 @@ class Drone():
 
     def load(items):
         for item in items:
-            
+
 
 
 
@@ -34,6 +40,8 @@ def distance((x1, y1), (x2, y2)):
     euclidean_distance = sqrt(diff_x * diff_x + diff_y * diff_y)
     dis = ceil(euclidean_distance)
     return dis
+
+def get_weight(index):
 
 
 
