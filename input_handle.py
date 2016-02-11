@@ -1,4 +1,4 @@
-from hash_code.warehouse import Warehouse
+from . import Warehouse
 
 
 rows = 0
@@ -24,6 +24,8 @@ def opener(filename):
 		drone_num = int(line[2])
 		turns = int(line[3])
 		payload = int(line[4])
+		for d in range(drone_num):
+			drones.append(Drone(0,0, payload))
 		num_of_products = int(f.readline().strip())
 		product_weight = list(map(int, f.readline().strip().split()))
 		num_of_warehouses = int(f.readline().strip())
